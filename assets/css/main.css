@@ -9,7 +9,7 @@
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, cite,
+pre, a, abbr, acronym, address, big, burger, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, ol, ul, li, fieldset,
@@ -1845,10 +1845,13 @@ input, select, textarea {
 			height: 3em;
 			line-height: 3em;
 			cursor: default;
+			text-transform: uppercase;
+			letter-spacing: 5px;
 		}
 
 			#header h1 a {
-				font-size: 1.25em;
+				font-size: 1.0em;
+				font-weight: 600;
 			}
 
 		#header nav {
@@ -1864,7 +1867,7 @@ input, select, textarea {
 			}
 
 				#header nav ul li {
-					display: inline-block;
+					display: inline-flex;
 					margin-left: 0.5em;
 					font-size: 0.9em;
 				}
@@ -1878,7 +1881,16 @@ input, select, textarea {
 						padding: 0 0.5em 0 0.5em;
 						outline: 0;
 					}
-
+					#header nav ul li burger{
+						display:block;
+					} 
+						#header nav ul li burger div{
+							display:block;
+							width: 25px;
+							height: 3px;
+							color:#272727;
+							margin: 0.1em;
+						}
 		@media screen and (max-width: 736px) {
 
 			#header {
