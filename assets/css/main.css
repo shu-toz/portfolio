@@ -1881,17 +1881,18 @@ input, select, textarea {
 						padding: 0 0.5em 0 0.5em;
 						outline: 0;
 					}
-					#header nav ul li burger{
-						display:none;
-						height: 1.1em;
-					} 
-						#header nav ul li burger div{
-							display:block;
-							width: 1.4em;
-							height: 0.1em;
-							background-color:#272727;
-							margin: 0.3em;
-						}
+			#header nav burger{
+				display:none;
+				height: 1.1em;
+			} 
+				#header nav burger div{
+					display:block;
+					width: 1.4em;
+					height: 0.1em;
+					background-color:#272727;
+					margin: 0.3em;
+				}
+
 		@media screen and (max-width: 736px) {
 
 			#header {
@@ -1912,20 +1913,28 @@ input, select, textarea {
 					}
 
 				#header nav {
-					display: absolute;
+					display: block;
+					margin-left: 0em;
+					height: 2.5em;
+					width: 10em;
 				}
 					#header nav ul {
 						margin: 0;
+						display: flex;
+						flex-direction: column;
+						height: 20em;
+						background-color: #ffffff;
 					}
 		
 						#header nav ul li {
-							display: inline-flex;
 							margin-left: 0.5em;
-							font-size: 0.9em;
+							height: 5em;
+							justify-content: center;
 						}
 		
 							#header nav ul li a {
-								display: none;
+								display: inline-flex;
+								position: absolute;
 								color: inherit;
 								text-decoration: none;
 								height: 3em;
@@ -1933,17 +1942,17 @@ input, select, textarea {
 								padding: 0 0.5em 0 0.5em;
 								outline: 0;
 							}
-							#header nav ul li burger{
-								display:block;
-								height: 1.4em;
-							}
-								#header nav ul li burger div{
-									width: 1.4em;
-									height: 0.1em;
-									background-color:#272727;
-									margin: 0.3em;
-								}
-							}				
+					#header nav burger{
+						display: block;
+						height: 1.4em;
+					}
+						#header nav burger div{
+							width: 1.4em;
+							height: 0.1em;
+							background-color:#272727;
+							margin: 0.3em;
+						}
+			}				
 	body {
 		padding-top: 3em;
 	}
